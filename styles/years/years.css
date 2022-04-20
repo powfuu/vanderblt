@@ -1,0 +1,38 @@
+body{
+    background-image: url(/data/road-hd.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.initialDiv{
+    text-align: center;
+    background: black;
+    background-image: url(/data/road.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+#initialImg{
+    width: 45%;
+    border-radius: 1em;
+    padding-top: 5em;
+    animation: fade 2s;
+}
+#text{
+    color: white;
+    font-family: mplusthin;
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1em;
+    animation: fade 2s;
+}
+.footer-container2{
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

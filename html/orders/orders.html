@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pedidos</title>
+        <link rel="icon" href="/data/logo.png">
+        <!--JAVASCRIPT-->
+        <script type="text/javascript" src="/js/email_contact-us.js"></script>
+        <script type="text/javascript" src="/js/nav.js"></script>
+        <script type="text/javascript" src="/js/AOS.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="/styles/nav.css">
+        <link rel="stylesheet" href="/styles/default.css">
+        <link rel="stylesheet" href="/styles/orders/orders.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    </head>
+    <body>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+            <img src="/data/logo.png" id="logo_src"></img>
+            <label class="logo">VANDERBILT</label>
+            <ul>
+                <li><a href="#" id="home">INICIO</a></li>
+                <li><a href="#" id="years">58 Años</a></li>
+                <li><a href="#" id="company">Empresa</a></li>
+                <li><a href="#" class="active" id="orders">Pedidos</a></li>
+                <li><a href="#" id="dealers">Servicio a Distribuidores</a></li>
+                <li><a href="#" id="contact">Contacto/Ubicación</a></li>
+            </ul>
+        </nav>
+        <div class="initialDiv">
+            <h1 id="initialTitle">Realiza tus <span class="resalt">Pedidos</span>!</h1>
+            <h3 id="initialText">en cualquier <span class="important">lugar</span>, en cualquier <span class="important">momento</span></h3>
+        </div>
+        <div class="contai">
+            <div class="contain-container">
+            <div class="table first">
+            </div>
+            <div class="table second">
+              <img src="https://static.wixstatic.com/media/67b462_931a6247823d4c968278461f1a2356a6.png/v1/fill/w_55,h_25,al_c,q_85,usm_0.66_1.00_0.01/67b462_931a6247823d4c968278461f1a2356a6.webp" id="log">
+                <h1 id="designy"><span class="vanderbilt_text-2">VANDERBILT</span></h1>
+                <h4 id="designytext">Contáctanos vía Correo Eléctronico</h4>
+    
+                <form action="#" onsubmit="return false;" method="POST" id="form">
+                  <input type="text" id="name" name="name" 
+                  placeholder="Nombre*" onfocus="this.placeholder=''" onblur="this.placeholder='Nombre*'"><br>
+                  <input type="email" id="email" name="email" placeholder="Email*" onfocus="this.placeholder=''" onblur="this.placeholder='Email*'"><br>
+                  <input type="text" id="pais" name="pais"
+                  placeholder="Dirección*" onfocus="this.placeholder=''" 
+                  onblur="this.placeholder='Dirección*'"><br>
+                  Pedido<br><br>
+                  <textarea id="mensaje"cols="40" rows="5" name="mensaje"> </textarea>
+                 <br>
+                  <br>
+                  <input type="submit" value="Enviar" id="submit">
+                </form>
+                <div class="table-in second">
+                  <h4 id="cvw">O Contáctanos vía WhatsApp:</h4>
+                  <img src="https://web.impermilo.com.mx/mail%2020032018/whatsapp.ico" id="imgwsth">
+                  <h4 class="whatsappth" style="color: white">+593 96 903 5511</h4>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="footer-container2">
+                <div class="footer-container_table first">
+                  <div style="background: red; padding: .75em;">
+                    <img src="https://static.wixstatic.com/media/67b462_7afbb1333126400cb412aa3897ce2604.png/v1/fill/w_85,h_84,al_c,q_85,usm_0.66_1.00_0.01/67b462_7afbb1333126400cb412aa3897ce2604.webp" id="logo-footer">
+                  </div>
+                </div>
+                <div class="footer-container_table second">
+                  <div class="c">
+                    <h3 class="a">Fábrica de resortes <span class="vanderbilt_text">VANDERBILT</span></h3>
+                    <h3 class="a">Parque Industrial Machangara, Panamericana norte Km4 ½.</h3>
+                    <h3 class="a">Fábrica: (07) 3700888 // Local: (07) 4114954</h3>
+                  </div>
+                    <div class="b">
+                      <img src="https://static.wixstatic.com/media/67b462_3948cb9196dd4fc6b6e9d3aa736ea581.png/v1/fill/w_56,h_98,al_c,q_85,usm_0.66_1.00_0.01/67b462_3948cb9196dd4fc6b6e9d3aa736ea581.webp" id="cri1">
+                      <img src="https://static.wixstatic.com/media/67b462_84e471b5c92744f89a396216ae2bbeab.png/v1/fill/w_109,h_58,al_c,q_85,usm_0.66_1.00_0.01/67b462_84e471b5c92744f89a396216ae2bbeab.webp" id="cri2">
+                      <h4 id="copyright">2021 © VANDERBILT.</h4>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </body>
+</html>

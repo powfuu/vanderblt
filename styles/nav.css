@@ -1,0 +1,130 @@
+nav{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    transition: 1s;
+}
+@keyframes entryContentNav{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+#logo_src{
+    padding-left: 1em;
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+    margin-top: 15px;  
+    border-radius: 25%;
+    animation: entryContentNav 3s;
+}
+label.logo{
+    color: white;
+    border-radius: 8px;
+    background: rgb(235, 0, 0);
+    font-size: 26px;
+    line-height: 33px;
+    padding: 0px 12px;
+    margin-left: 15px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 23.5px;  
+    height: 32.5px;
+    overflow: hidden;
+    animation: entryContentNav 3s;
+    transition: 1s;
+}
+nav ul{
+    float: right;
+    margin-right: 77px;
+    animation: entryContentNav 3s;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    font-weight: 500;
+    transition: .9s;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 6px;
+    text-shadow: 3.5px 3.5px 7px black;
+}
+a.active, a:hover{
+    text-shadow: 0px 0px 0px black;
+    background: white;
+    color: red;
+    transition: .6s;
+}
+.table-container2{
+    display: table;
+    width: 50%;
+}
+.table.first2{
+    display: table-cell;
+    width: 25%;
+}
+.table.second2{
+    width: 25%;
+    height: 50px;
+    display: table-cell;
+}
+.table.third2{
+    width: 100%;
+    display: table-cell;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 1s;
+}
+#check{
+    display:none;
+}
+
+@media(max-width: 1160px){
+.checkbtn{
+    display: block;
+
+}
+ul{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    left: 100%;
+    text-align: right;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin-right: 1.5em;
+}
+nav ul li a{
+    font-size: 20px;
+}
+#check:checked ~ ul{
+    left: -75%;
+}
+#check:checked ~ #logo_src{
+    display: none;
+}
+}

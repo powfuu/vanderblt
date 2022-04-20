@@ -1,0 +1,75 @@
+body{
+    background-image: url(/data/road-hd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.initialDiv{
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#textin{
+    display: inline-block;
+    width: 50%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    animation: fade 3s;
+    text-shadow: 1px 3px black;
+}
+#imgin{
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    animation: fade 1.5s;
+}
+#titlein{
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    animation: fade 3s;
+}
+@media(max-width: 900px){
+    #imgin{
+        height: 400px;
+    }
+    #textin{
+        display: inline;
+        color: white;
+    }
+}
+@media(max-width: 700px){
+    #imgin{
+        height: 200px;
+    }
+}
+.certificates{
+    overflow: hidden;
+    margin-top: 1em;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/ab/32/e9/ab32e91723902cfc37558ee244e96d97.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+}
+#certificates-text{
+    color: white;
+    font-family: mplusthin;
+    font-weight: bold;
+    padding: .75em;
+    text-shadow: 2px .5px black;
+}
+#certificate_1{
+    margin-bottom: 1.5em;
+    padding-right: .5em;
+}
+#certificate_2{
+    margin-bottom: 1.5em;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
