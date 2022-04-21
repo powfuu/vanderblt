@@ -24,7 +24,7 @@
     background-image: url(/data/initial2.jpg);
     background-size: cover;
     background-position: top;
-    height: 645px;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
